@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "image":"./../cryptoimg1.webp",
+        "title":"USDC: The digital dollar for the global crypto economy",
+        "Description":"Coinbase believes crypto will be part of the solution for creating an open finalcial system that is both more effecient and more equitable. we co-founded the Center Consortium in 2018 to invest in the build of USDC, and since then it has become the secound largest stablecion by market capotalization."
+    },
+    {
+        "id":2,
+        "image":"./../cryptoimg2.webp",
+        "title":"USDC: The digital dollar for the global crypto economy",
+        "Description":"Coinbase believes crypto will be part of the solution for creating an open finalcial system that is both more effecient and more equitable. we co-founded the Center Consortium in 2018 to invest in the build of USDC, and since then it has become the secound largest stablecion by market capotalization."
+    },
+    {
+        "id":3,
+        "image":"./../cryptoimg3.webp",
+        "title":"USDC: The digital dollar for the global crypto economy",
+        "Description":"Coinbase believes crypto will be part of the solution for creating an open finalcial system that is both more effecient and more equitable. we co-founded the Center Consortium in 2018 to invest in the build of USDC, and since then it has become the secound largest stablecion by market capotalization."
+    }
+]

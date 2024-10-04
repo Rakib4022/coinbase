@@ -1,101 +1,64 @@
-import Image from "next/image";
+
+import Nabvar from "./components/Nabvar/Nabvar";
+import Banner from "./components/HomeCompo/Banner";
+import StartPortfolio from "./components/HomeCompo/StartPortfolio";
+import CdBanner from "./components/HomeCompo/CdBanner";
+import CoinbaseSection from "./components/HomeCompo/coinbasesection/CoinbaseSection";
+import img1 from '../../assets/Retail.webp';
+import img2 from '../../assets/Advanced.webp';
+import img3 from '../../assets/Wallet.webp';
+import img4 from '../../assets/Prime.webp';
+import GetStartedSection from "./components/HomeCompo/GetStartedSection";
+import Footer from "./components/Footer/Footer";
+import TheFreedomSection from "./components/HomeCompo/TheFreedomSection";
+import NewCrypto from "./components/HomeCompo/newcCrypto/NewCrypto";
+import CryptoExcange from "./components/HomeCompo/cryptoExcange/CryptoExcange";
+import CryptoCurency from "./components/HomeCompo/cryptocurency/CryptoCurency";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <main>
+      <Nabvar />
+      <Banner />
+      <CryptoCurency/>
+      <StartPortfolio />
+      <CdBanner />
+      <div>
+        <CoinbaseSection
+          img={img1}
+          title={'coinbase'}
+          heading={'Buy, sell, and store hundreds of cryptocurrencies'}
+          subHeading={'From Bitcoin to Dogecoin, we make it easy to buy and sell cryptocurrency. Protect your crypto with best in class cold storage.'}
+          btntext={'Sing up now'}
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <CoinbaseSection
+          img={img2}
+          title={'advanced'}
+          heading={'Powerful tools, designed for the advanced trader'}
+          subHeading={'Powerful analytical tools with the safety and security of Coinbase deliver the ultimate trading experience. Tap into sophisticated charting capabilities, real-time order books, and deep liquidity across hundreds of markets.'}
+          btntext={'Start trading'}
+        />
+        <CoinbaseSection
+          img={img3}
+          title={'wallet'}
+          heading={'Do more with your crypto with Coinbase Wallet'}
+          subHeading={'Store your crypto in your own personal crypto wallet and explore decentralized finance (DeFi), buy and sell NFTs, and more.'}
+          btntext={'Learn more'}
+        />
+        <CoinbaseSection
+          img={img4}
+          title={'prime'}
+          heading={'The financial institution for a digital asset future'}
+          subHeading={'Coinbase Prime is the first choice for sophisticated investors and institutions that want to invest in digital assets'}
+          btntext={'Learn more'}
+        />
+      </div>
+      <GetStartedSection />
+      <CryptoExcange />
+      <NewCrypto/>
+      <TheFreedomSection />
+      <Footer />
+    </main>
   );
 }
+
