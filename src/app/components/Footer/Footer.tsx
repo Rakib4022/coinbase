@@ -6,7 +6,7 @@ import { LuGlobe } from "react-icons/lu";
 const Footer = () => {
     return (
         <div>
-            <footer className="footer bg-base-200 text-base-content p-10">
+            <footer className="footer dark:text-white text-base-content p-10">
                 <aside>
                     <a className=' text-blue-600 font-bold text-2xl'>coinbase</a>
                     <p className='text-xl text-slate-500'> © 2024 Coinbase</p>
@@ -20,12 +20,12 @@ const Footer = () => {
                     <ul className='flex items-center mt-6 gap-4'>
                         <LuGlobe size={20} />
                         <Link href=""><li className='text-base divider'>Global</li></Link>
-                        <Link href=""><li className='text-base border-s-2 border-black pl-4'>English</li></Link>
+                        <Link href=""><li className='text-base border-s-2 border-black dark:border-white pl-4'>English</li></Link>
                     </ul>
 
                 </aside>
                 <nav>
-                    <h6 className=" text-base font-bold text-black">Company</h6>
+                    <h6 className=" text-base font-bold ">Company</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">About</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Careers</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Affiliates</Link>
@@ -41,7 +41,7 @@ const Footer = () => {
                     <Link className='text-base font-semibold text-slate-500' href="">Information</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Digital Asset Disclosures</Link>
                 
-                    <h6 className=" text-base font-bold mt-6 text-black">Learn</h6>
+                    <h6 className=" text-base font-bold mt-6 ">Learn</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">Bitcoin Halving</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Ethereum Merge</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Explore</Link>
@@ -58,21 +58,21 @@ const Footer = () => {
                     <Link className='text-base font-semibold text-slate-500' href="">Taxes</Link>
                </nav>
                 <nav>
-                    <h6 className=" text-base font-bold text-black">Individuals</h6>
+                    <h6 className=" text-base font-bold ">Individuals</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">Buy & sell</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Earn free crypto</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Wallet</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Card</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Coinbase One</Link>
                    
-                    <h6 className=" text-base font-bold mt-6 text-black">Businesses</h6>
+                    <h6 className=" text-base font-bold mt-6 ">Businesses</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">Institutional</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Prime</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Asset Hub</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Commerce</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Derivatives Exchange</Link>
 
-                    <h6 className=" text-base font-bold mt-6 text-black">Developers</h6>
+                    <h6 className=" text-base font-bold mt-6 ">Developers</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">Developer Platform</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Base</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Staking</Link>
@@ -86,7 +86,7 @@ const Footer = () => {
                     <Link className='text-base font-semibold text-slate-500' href="">OnchainKit</Link>
                 </nav>
                 <nav>
-                    <h6 className=" text-base font-bold text-black">Support</h6>
+                    <h6 className=" text-base font-bold ">Support</h6>
                     <Link className='text-base font-semibold text-slate-500' href="">Help center</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Contact us</Link>
                     <Link className='text-base font-semibold text-slate-500' href="">Create account</Link>

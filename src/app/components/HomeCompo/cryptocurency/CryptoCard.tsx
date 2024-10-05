@@ -1,21 +1,24 @@
 'use client'
+import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import { FaArrowUp } from "react-icons/fa6";
 import { FaArrowDown } from "react-icons/fa6";
 
 interface CryptoCardProps {
+  image: StaticImageData;
   name: string;
   price: string;
   percentage: string;
   isIncrease: boolean;
 }
 
-const CryptoCard: React.FC<CryptoCardProps> = ({ name, price, percentage, isIncrease }) => {
+const CryptoCard: React.FC<CryptoCardProps> = ({image, name, price, percentage, isIncrease }) => {
   return (
-    <div className="bg-white dark:text-black rounded-2xl shadow p-4 w-full text-center">
+    <div className="dark:text-white dark:border rounded-2xl shadow px-6 py-2 w-full">
+      <Image width={50} src={image} alt='image' className='py-2' />
       <h3 className="text-base font-semibold ">{name}</h3>
-      <p className="text-gray-700 mb-2">BDT {price}</p>
-      <p className={`text-xl font-bold ${isIncrease ? 'text-green-800' : 'text-red-500'} flex items-center justify-center gap-2`}>
+      <p className="text-gray-700 mb-4">BDT {price}</p>
+      <p className={`text-3xl  ${isIncrease ? 'text-green-800' : 'text-red-500'} flex items-center justify-center gap-2`}>
         {isIncrease ? <FaArrowUp /> : <FaArrowDown />} {percentage}%
       </p>
     </div>

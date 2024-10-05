@@ -2,6 +2,9 @@
 import { Button } from '@/components/ui/button';
 import React from 'react';
 import CryptoItem from './CryptoItem';
+import cryptoimg1 from '../../../../../assets/cryptoimg1.webp';
+import cryptoimg2 from '../../../../../assets/cryptoimg2.webp';
+import cryptoimg3 from '../../../../../assets/cryptoimg3.webp';
 
 
 
@@ -10,19 +13,19 @@ const NewCrypto = () => {
     const cryptoData = [
         {
             "id": 1,
-            "image": "/public/assets/cryptoimg1.jpg",
+            "image": cryptoimg1,
             "title": "USDC: The digital dollar for the global crypto economy",
             "Description": "Coinbase believes crypto will be part of the solution for creating an open finalcial system that is both more effecient and more equitable. we co-founded the Center Consortium in 2018 to invest in the build of USDC, and since then it has become the secound largest stablecion by market capotalization."
         },
         {
             "id": 2,
-            "image": "/asests/cryptoimg2.webp",
+            "image": cryptoimg2,
             "title": "Can crypto really replace your bank account?",
             "Description": "If you’re a big enough fan of crypto, you’ve probably heard the phrase “be your own bank” or the term “bankless” — the idea being that crypto can offer more control over your financial future than traditional finance. But how much of your financial life really can be accomplished via crypto?"
         },
         {
             "id": 3,
-            "image": "/asests/cryptoimg3.webp",
+            "image": cryptoimg3,
             "title": "When is the best time to invest in crypto?",
             "Description": "Cryptocurrencies like Bitcoin can experience daily (or even hourly) price volatility. As with any kind of investment, volatility may cause uncertainty, fear of missing out, or fear of participating at all. When prices are fluctuating, how do you know when to buy?"
         }
